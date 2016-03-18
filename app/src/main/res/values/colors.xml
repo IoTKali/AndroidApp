@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="main_color" type="color">#FF375B71</item>
+    <color name="black_overlay">#66000000</color>
+    <color name="main_white_color">#FFFFFFFF</color>
+    <color name="sign_in_button_color">#FF6b7d89</color>
+    <color name="sign_up_button_color">#FF65cf02</color>
+    <color name="sign_in_button_login_color">#FF39b3f6</color>
+    <color name="save_location_button_color">#FF39b3f6</color>
+    <color name="find_car_button_color">#FF39b3f6</color>
+    <color name="main_red_color">#FFd94b3f</color>
+    <color name="add_new_car_bar_color">#FF0488d1</color>
+    <color name="profile_bar_color">#FF0488d1</color>
+    <color name="secondary_red_color">#FFb73327</color>
+    <color name="common_text_color">#FF565656</color>
+    <color name="main_black_color">#FF000000</color>
+    <color name="input_low_color">#FF39b3f6</color>
+    <color name="profile_bar_color_transparency">#850488d1</color>
+    
+    <color name="profile_button_main_menu_background">#FFef4140</color>
+    <color name="park_button_main_menu_background">#FF9ec43b</color>
+    <color name="find_my_car_button_main_menu_background">#FFf4ad31</color>
+    <color name="save_location_button_main_menu_background">#FF39b3f6</color>
+
+    <color name="transparent_white">#44FFFFFF</color>
+</resources>

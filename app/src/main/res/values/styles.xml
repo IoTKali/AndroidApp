@@ -1,0 +1,81 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/karport_menu_style_red</item>
+        <item name="actionBarStyle">@style/karport_menu_style_red</item>
+    </style>
+    <style name="karport_menu_style_red" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/main_red_color</item>
+        <item name="background">@color/main_red_color</item>
+    </style>
+
+    <style name="MainPageTheme" parent="android:Theme.Material.Light">
+        <!-- Main theme colors -->
+        <!--   your app branding color for the app bar -->
+        <item name="android:colorPrimary">@color/main_red_color</item>
+        <!--   darker variant for the status bar and contextual app bars -->
+        <item name="android:colorPrimaryDark">@color/secondary_red_color</item>
+        <!--   theme UI controls like checkboxes and text fields -->
+        <item name="android:colorAccent">@color/main_white_color</item>
+        <item name="android:textColorPrimary">@color/main_white_color</item>
+        <!--<item name="android:navigationBarColor">@color/main_red_color</item>-->
+        <item name="android:windowBackground">@color/main_white_color</item>
+
+
+    </style>
+
+
+    <style name="BlueKarportTheme" parent="android:Theme.Material.Light">
+        <!-- Main theme colors -->
+        <!--   your app branding color for the app bar -->
+        <item name="android:colorPrimary">@color/profile_bar_color</item>
+        <!--   darker variant for the status bar and contextual app bars -->
+        <item name="android:colorPrimaryDark">@color/main_color</item>
+        <!--   theme UI controls like checkboxes and text fields -->
+        <item name="android:colorAccent">@color/input_low_color</item>
+        <item name="android:textColorPrimary">@color/main_white_color</item>
+        <item name="android:navigationBarColor">@color/profile_bar_color</item>
+        <item name="android:windowBackground">@color/main_white_color</item>
+
+
+
+    </style>
+
+    <style name="BlueKarportThemeBottomDark" parent="BlueKarportTheme">
+        <item name="android:navigationBarColor">@color/main_black_color</item>
+    </style>
+    <style name="BlueKarportThemeBottomLight" parent="BlueKarportTheme">
+        <item name="android:navigationBarColor">@color/main_white_color</item>
+    </style>
+    <style name="BlueKarportThemeTransparent" parent="BlueKarportThemeBottomDark">
+        <item name="android:colorPrimary">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@color/profile_bar_color</item>
+    </style>
+    <style name="ProfileTheme" parent="BlueAppCompatFloatActionButton">
+        <item name="android:windowActionBarOverlay">true</item>
+    </style>
+
+    <style name="BlueAppCompatFloatActionButton" parent="Theme.AppCompat.Light">
+        <!-- Main theme colors -->
+        <!--   your app branding color for the app bar -->
+        <item name="android:colorPrimary">@color/profile_bar_color</item>
+        <item name="colorPrimary">@color/profile_bar_color</item>
+        <!--   darker variant for the status bar and contextual app bars -->
+        <item name="android:colorPrimaryDark">@color/main_color</item>
+        <item name="colorPrimaryDark">@color/main_color</item>
+        <!--   theme UI controls like checkboxes and text fields -->
+        <item name="android:colorAccent">@color/input_low_color</item>
+        <item name="android:textColorPrimary">@color/main_white_color</item>
+        <item name="android:navigationBarColor">@color/profile_bar_color</item>
+        <item name="android:windowBackground">@color/main_white_color</item>
+        <item name="colorAccent">@color/main_red_color</item>
+    </style>
+    <style name="ToolbarTitleAppearance" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">16dp</item>
+        <!-- include other attributes you want to change: textColor, textStyle, etc -->
+    </style>
+
+    <style name="ToolbarSubtitleAppearance" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
+        <item name="android:textSize">12dp</item>
+    </style>
+</resources>

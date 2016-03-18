@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    tools:context="com.kali.karport.FindVehicleActivity"
+    android:weightSum="1"
+    android:orientation="vertical"
+    android:background="@color/main_white_color">
+    <!--<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.35"
+        android:gravity="top">
+
+    </RelativeLayout>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom">
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.iotkali.karport.FindVehicleActivity"/>
+        <Button
+            android:id="@+id/button_accept_save_location"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/found_car_button_text"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/main_white_color"
+            android:background="@color/find_car_button_color"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.iotkali.karport">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/MainPageTheme">
+        <activity
+            android:name=".SplashScreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_splash_screen"
+            android:screenOrientation="portrait"
+            android:theme="@style/BlueKarportThemeBottomLight">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/BlueKarportThemeBottomDark" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait"
+            android:theme="@style/BlueKarportThemeBottomDark">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.iotkali.karport.MainActivity" />
+        </activity>
+        <activity
+            android:name=".FindVehicleActivity"
+            android:label="@string/title_activity_find_vehicle"
+            android:screenOrientation="portrait"
+            android:theme="@style/BlueKarportThemeBottomDark">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.iotkali.karport.MainActivity" />
+        </activity>
+        <activity
+            android:name=".SaveLocationActivity"
+            android:label="@string/title_activity_save_location"
+            android:screenOrientation="portrait"
+            android:theme="@style/BlueKarportThemeBottomDark">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.iotkali.karport.MainActivity" />
+        </activity>
+        <activity
+            android:name=".PreLoginActivity"
+            android:label="@string/title_activity_pre_login"
+            android:screenOrientation="portrait"
+            android:theme="@style/BlueKarportThemeBottomDark" />
+        <activity
+            android:name=".SignUpActivity"
+            android:label="@string/title_activity_sign_up"
+            android:parentActivityName=".PreLoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BlueKarportThemeBottomDark">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.iotkali.karport.PreLoginActivity" />
+        </activity>
+        <activity
+            android:name=".AddNewCarActivity"
+            android:label="@string/title_activity_add_new_car"
+            android:screenOrientation="portrait"
+            android:theme="@style/BlueAppCompatFloatActionButton" />
+        <activity
+            android:name=".ProfileActivity"
+            android:label="@string/title_activity_profile"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/ProfileTheme"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.iotkali.karport.MainActivity" />
+        </activity>
+        <activity
+            android:name=".FindSpotActivity"
+            android:label="@string/title_activity_find_spot"
+            android:screenOrientation="portrait"
+            android:theme="@style/BlueKarportThemeBottomDark">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.iotkali.karport.MainActivity" />
+        </activity>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+    </application>
+
+</manifest>
